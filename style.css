@@ -1,0 +1,16 @@
+ *{box-sizing:border-box;margin:0}
+body{font-family:system-ui,sans-serif;background:#f4f5f9;padding:32px 16px}
+.grid{display:grid;gap:20px;max-width:1000px;margin:auto;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{position:relative;display:grid;grid-template-rows:subgrid;grid-row:span 4;gap:16px;
+  background:#fff;border:2px solid #e3e5ee;border-radius:16px;padding:24px;cursor:pointer;transition:.2s}
+.card:hover{transform:translateY(-4px)}
+.popular{border-color:#6c5ce7;box-shadow:0 8px 24px rgba(108,92,231,.2)}
+.selected{border-color:#6c5ce7;background:#f3f1ff;outline:3px solid #6c5ce7}
+.badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);
+  background:#6c5ce7;color:#fff;font-size:12px;padding:4px 12px;border-radius:99px}
+.head p{color:#666;font-size:14px;margin-top:6px}
+.price span{font-size:40px;font-weight:700}
+.features{list-style:none;display:grid;gap:8px;align-content:start}
+.features li::before{content:"✓ ";color:#6c5ce7}
+.btn{padding:12px;border:0;border-radius:10px;background:#222;color:#fff;font-size:16px}
+.selected .btn{background:#6c5ce7}
